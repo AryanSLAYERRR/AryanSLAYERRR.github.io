@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Gupta's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="name-container">
+            <h1 class="name">Aryan Gupta</h1>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-page">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+        </header>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm Aryan Gupta, a passionate developer, who is trying to change the world by creating Dapps, and making new possibilities with blockchain.</p>
+        </section>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="images/chatD.png" alt="Project 1">
+                <h3>ChatD</h3>
+                <p>Lorem ipsum dorem</p>
+            </div>
+            <div class="project">
+                <img src="images/supplyChain.png" alt="Project 2">
+                <h3>Supply Chain</h3>
+                <p>A blockchained powered supplychain </p>
+            </div>
+        </section>
+    </div>
+
+    <script>  
+        window.onload = () => {
+            setTimeout(() => {
+                document.querySelector(".loading-screen").style.display = "none";
+                document.querySelector(".portfolio-page").style.display = "block";
+            }, 5000); 
+        };
+    </script>
+</body>
+</html>
